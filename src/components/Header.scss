@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #000; // Adjust as needed
+  padding: 10px 20px;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 30px; // Reduced logo size
+      height: 30px;
+    }
+
+    h1 {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+}

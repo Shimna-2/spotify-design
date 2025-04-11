@@ -1,0 +1,56 @@
+.app-layout {
+  display: grid;
+  grid-template-columns: 2fr 4fr 6fr;
+  grid-template-areas: "sidebar songlist player";
+  gap: 10px;
+  height: 100vh;
+  padding: 10px;
+  background: #121212;
+  overflow: hidden; // Hides scrollbars
+
+  .sidebar-wrapper {
+    grid-area: sidebar;
+    overflow: hidden; // Remove inner scrollbars
+  }
+
+  .songlist-wrapper {
+    grid-area: songlist;
+    overflow: hidden;
+  }
+
+  .player-wrapper {
+    grid-area: player;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  // Responsive layout for mobile
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "player"
+      "songlist"
+      "sidebar";
+
+    .sidebar-wrapper,
+    .songlist-wrapper,
+    .player-wrapper {
+      grid-column: 1 / span 1;
+      width: 100%;
+    }
+
+    .player-wrapper {
+      order: 1;
+    }
+
+    .songlist-wrapper {
+      order: 2;
+    }
+
+    .sidebar-wrapper {
+      order: 3;
+    }
+  }
+}

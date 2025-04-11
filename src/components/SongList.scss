@@ -1,0 +1,12 @@
+.song-list {
+  padding: 16px;
+  overflow-y: auto;
+  height: 100vh;
+  background-color: #111;
+  scrollbar-width: none;
+  margin-top: 50px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

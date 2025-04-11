@@ -1,0 +1,23 @@
+// src/components/SearchBar.scss
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+
+  input {
+    background: transparent;
+    border: none;
+    color: white;
+    flex: 1;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  svg {
+    color: #bbb;
+    margin-left: 8px;
+  }
+}
